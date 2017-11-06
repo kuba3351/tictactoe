@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kółko i krzyżyk</string>
+
+    <string name="dummy_button">Start gry</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_game">Kółko i krzyżyk</string>
+
+    <string name="winner">Wygrywa:</string>
+    <string name="correntMovie">Ruch gracza:</string>
+    <string name="draw">Remis!</string>
+</resources>

@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.urz.tictactoe.kkoikrzyyk.com.urz.tictactoe.mainMenu">
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        style="?metaButtonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/black_overlay"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/startGame"
+            style="?metaButtonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dummy_button" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/crossGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginEnd="62dp">
+
+            <RadioButton
+                android:id="@+id/computerCross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/computerCircle"
+                android:layout_alignBottom="@+id/computerCircle"
+                android:layout_alignStart="@+id/humanCross"
+                android:layout_weight="1"
+                android:text="Komputer" />
+
+            <RadioButton
+                android:id="@+id/humanCross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/computerCircle"
+                android:layout_alignEnd="@+id/imageView3"
+                android:layout_weight="1"
+                android:text="Człowiek" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/circleGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginStart="33dp">
+
+            <RadioButton
+                android:id="@+id/computerCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/computerCircle"
+                android:layout_alignBottom="@+id/computerCircle"
+                android:layout_alignStart="@+id/humanCross"
+                android:layout_weight="1"
+                android:text="Komputer" />
+
+            <RadioButton
+                android:id="@+id/humanCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/computerCircle"
+                android:layout_alignEnd="@+id/imageView3"
+                android:layout_weight="1"
+                android:text="Człowiek" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginEnd="76dp"
+            app:srcCompat="@drawable/krzyzyk" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="71dp"
+            app:srcCompat="@drawable/kolko" />
+
+    </RelativeLayout>
+
+</FrameLayout>
