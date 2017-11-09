@@ -1,4 +1,9 @@
-package com.urz.tictactoe;
+package com.urz.tictactoe.AI;
+
+import com.urz.tictactoe.engine.FieldPosition;
+import com.urz.tictactoe.engine.Game;
+import com.urz.tictactoe.engine.GameBoard;
+import com.urz.tictactoe.engine.Symbol;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +29,7 @@ public class AIRunner {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        for(AIAlgorhitm algorhitm : AIAlgorhitmsOrderProvider.getAlgorhitmsList()) {
+        for(AIAlgorithm algorhitm : AIAlgorhitmsOrderProvider.getAlgorhitmsList()) {
             FieldPosition position = algorhitm.doNextMovie(gameBoard, params);
             if(position != null)
                 return position;

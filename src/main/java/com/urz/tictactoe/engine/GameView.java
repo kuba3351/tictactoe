@@ -1,4 +1,4 @@
-package com.urz.tictactoe;
+package com.urz.tictactoe.engine;
 
 import android.content.Context;
 import android.graphics.Canvas;

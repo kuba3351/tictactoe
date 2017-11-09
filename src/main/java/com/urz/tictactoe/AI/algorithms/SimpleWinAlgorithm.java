@@ -1,12 +1,15 @@
-package com.urz.tictactoe;
+package com.urz.tictactoe.AI.algorithms;
 
-import java.util.Iterator;
+import com.urz.tictactoe.AI.AIAlgorithm;
+import com.urz.tictactoe.engine.FieldPosition;
+import com.urz.tictactoe.engine.GameBoard;
+import com.urz.tictactoe.engine.Symbol;
 
 /**
  * Created by jakub on 17.10.17.
  */
 
-public class SimpleWinAlgorhitm implements AIAlgorhitm {
+public class SimpleWinAlgorithm implements AIAlgorithm {
     @Override
     public FieldPosition doNextMovie(GameBoard gameBoard, Symbol symbol) {
         for(GameBoard.Field field : gameBoard) {

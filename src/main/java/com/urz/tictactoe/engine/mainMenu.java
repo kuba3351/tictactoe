@@ -1,4 +1,4 @@
-package com.urz.tictactoe;
+package com.urz.tictactoe.engine;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.urz.tictactoe.engine.Game;
 import com.urz.tictactoe.kkoikrzyyk.R;
 
 public class mainMenu extends AppCompatActivity {

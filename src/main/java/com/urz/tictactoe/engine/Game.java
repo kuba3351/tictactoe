@@ -1,4 +1,4 @@
-package com.urz.tictactoe;
+package com.urz.tictactoe.engine;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.urz.tictactoe.AI.AIRunner;
 import com.urz.tictactoe.kkoikrzyyk.R;
 
 public class Game extends AppCompatActivity {
@@ -148,6 +149,11 @@ public class Game extends AppCompatActivity {
                 aiInProgress = false;
             }
         });
+        while(aiInProgress) {
+
+        }
+        if(blankFields > 0 && !gameBoard.isGameEnded())
+            runAI();
     }
 
     private void runAI() {

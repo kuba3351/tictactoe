@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.urz.tictactoe.mainMenu"
+            android:name="com.urz.tictactoe.engine.mainMenu"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme">
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.urz.tictactoe.Game"
+            android:name="com.urz.tictactoe.engine.Game"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_game"
             android:theme="@style/FullscreenTheme"></activity>
